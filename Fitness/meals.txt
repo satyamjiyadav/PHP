@@ -1,0 +1,4 @@
+aroma|15|2024-12-01
+mailai-kofta|230|2024-12-02
+paneer tikka|250|2024-12-01
+paneer tikka burfi|12|2024-12-04
