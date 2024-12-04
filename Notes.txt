@@ -1,0 +1,15 @@
+Qus : what is cookies?
+Ans : Cookies are small text files that websites send to your browser to store information about your visit.
+      They are used to customize your experience on a website,
+      and can help make it easier to visit the site again. 
+
+
+Qus : difference between ge and post?
+Ans : Get -> request is visible in the address bar
+          -> Less secure request 
+          -> Mostly used o get data from server
+
+    
+      Post ->Request is not visible in the address bar 
+          ->secure
+          ->used to create and update operations on server

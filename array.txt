@@ -1,0 +1,70 @@
+1. Array Creation
+array(): Creates an array.
+array_fill(): Fills an array with values.
+array_fill_keys(): Fills an array with values, specifying keys.
+2. Array Manipulation
+array_push(): Adds one or more elements to the end of an array.
+array_pop(): Removes the last element of an array.
+array_shift(): Removes the first element of an array.
+array_unshift(): Adds one or more elements to the beginning of an array.
+array_splice(): Removes a portion of the array and replaces it with something else.
+array_slice(): Extracts a portion of the array.
+3. Array Merging
+array_merge(): Merges one or more arrays.
+array_merge_recursive(): Merges arrays recursively.
+array_combine(): Combines two arrays to create an associative array.
+array_replace(): Replaces the values of the first array with values from subsequent arrays.
+array_replace_recursive(): Replaces values recursively.
+4. Array Sorting
+sort(): Sorts an array in ascending order (values only).
+rsort(): Sorts an array in descending order (values only).
+asort(): Sorts an associative array in ascending order, preserving keys.
+arsort(): Sorts an associative array in descending order, preserving keys.
+ksort(): Sorts an array by keys in ascending order.
+krsort(): Sorts an array by keys in descending order.
+usort(): Sorts an array using a custom comparison function.
+uasort(): Sorts an associative array using a custom comparison function (preserves keys).
+uksort(): Sorts an array by keys using a custom comparison function.
+natsort(): Sorts an array using natural order.
+natcasesort(): Sorts an array using case-insensitive natural order.
+5. Array Search
+in_array(): Checks if a value exists in an array.
+array_search(): Searches for a value and returns its key.
+array_key_exists(): Checks if a key exists in an array.
+key_exists(): Alias of array_key_exists().
+6. Array Filtering and Mapping
+array_filter(): Filters an array using a callback function.
+array_map(): Applies a callback function to the elements of an array.
+array_walk(): Applies a callback function to each element of an array.
+array_walk_recursive(): Applies a callback function recursively.
+7. Array Keys and Values
+array_keys(): Returns all keys of an array.
+array_values(): Returns all values of an array.
+8. Array Aggregation
+array_sum(): Returns the sum of array values.
+array_product(): Returns the product of array values.
+array_count_values(): Counts all values in an array.
+9. Array Chunking
+array_chunk(): Splits an array into chunks.
+10. Array Difference and Intersection
+array_diff(): Computes the difference between arrays.
+array_diff_assoc(): Computes the difference with additional index check.
+array_diff_key(): Computes the difference using keys.
+array_intersect(): Computes the intersection of arrays.
+array_intersect_assoc(): Computes the intersection with additional index check.
+array_intersect_key(): Computes the intersection using keys.
+11. Array Shuffling and Randomization
+shuffle(): Randomly shuffles the elements of an array.
+array_rand(): Picks one or more random keys from an array.
+12. Array Utility
+array_reverse(): Returns an array with elements in reverse order.
+array_unique(): Removes duplicate values from an array.
+array_column(): Returns the values from a single column in the input array.
+13. Array Serialization
+serialize(): Serializes an array into a string.
+unserialize(): Converts a serialized string back to an array.
+14. Array Partitioning
+array_pad(): Pads an array to the specified length with a value.
+15. Miscellaneous
+compact(): Creates an array from variables and their values.
+extract(): Imports variables into the current symbol table from an array.

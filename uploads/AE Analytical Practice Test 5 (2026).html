@@ -1,0 +1,516 @@
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            padding: 20px;
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            border-bottom: 2px solid #007BFF;
+            padding-bottom: 10px;
+        }
+        .question {
+            border-bottom: 3px solid #ddd;
+            padding: 20px;
+        }
+        .question:last-child {
+            border-bottom: none;
+        }
+        h2 {
+            color: #007BFF;
+            margin-bottom: 10px;
+        }
+        strong {
+            color: #333;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 10px 0;
+        }
+        li {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            flex-wrap: wrap;
+            margin: 5px 0;
+            padding: 10px;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        li:hover {
+            background-color: #e0e0e0;
+        }
+        .correct-answer {
+            color: #28a745; /* Green for correct answer */
+            font-weight: bold;
+        }
+        .explanation {
+            border-top: 1px solid #ddd;
+            padding-top: 10px;
+            margin-top: 10px;
+            color: #555;
+        }
+        .search-bar {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .search-bar input {
+            padding: 10px;
+            width: 80%;
+            max-width: 600px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .watermark {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            // transform: translate(-50%, -50%);
+            transform: rotate(-45deg) translate(-50%, -50%);
+            color: rgba(0, 0, 0, 0.1); /* Light color for visibility */
+            font-size: 50px;
+            font-weight: bold;
+            pointer-events: none; /* Prevent interaction */
+            user-select: none; /* Prevent selection */
+            z-index: -1; /* Send to back */
+        }
+            .telegram-link {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            font-size: 18px;
+        }
+        .telegram-link a {
+            color: #0088cc;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+    <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Search questions..." onkeyup="filterQuestions()">
+    </div>
+    <h1>AE Analytical Practice Test 5 (2026)</h1>
+    <div class="watermark">DeveloperIn</div>
+    <div class="telegram-link">
+        Connect with us on <a href="https://bit.ly/developerin" target="_blank">Telegram</a>
+    </div>
+<div class="question">
+            <h2>1. Spatial Reasoning</h2>
+            <div></div>
+            <div><div>Which one of the four boxes given below is created by folding the given design in the question figure?</div><div>&nbsp;</div><div><img alt="" src="https://questionbank.hitbullseye.com/data/75c9295fbe0953ffdff8dc77459dbf48/d4685456d9ceddf13710ca5f4b2dfa6c.png"></div></div>
+            <div><strong>Options:</strong></div>
+            <ul>
+                <li>A. <div><img alt="" src="https://questionbank.hitbullseye.com/data/75c9295fbe0953ffdff8dc77459dbf48/3789a8806f18a893f2c74abb917c722d.png"></div></li><li>B. <div><img alt="" src="https://questionbank.hitbullseye.com/data/75c9295fbe0953ffdff8dc77459dbf48/c02a963dfaf5ed46ed285804ab4ed92f.png"></div></li><li>C. <div><img alt="" src="https://questionbank.hitbullseye.com/data/75c9295fbe0953ffdff8dc77459dbf48/3cd679cb4aa45bce04423f7bc2b1641d.png"></div></li><li class="correct-answer">D. <div><br><div><img alt="" src="https://questionbank.hitbullseye.com/data/75c9295fbe0953ffdff8dc77459dbf48/c6adb0e2e01cfd937de28157f73b92d2.png"></div></div><div>&nbsp;</div></li>
+            </ul>
+            <div><strong>Correct Answer:</strong> <span class="correct-answer">D</span></div>
+            <div class="explanation"><strong>Explanation:</strong> <div>By visualising the given figure and folding we get 4th option as answer.</div><div>&nbsp;</div><div><img alt="" src="https://questionbank.hitbullseye.com/data/75c9295fbe0953ffdff8dc77459dbf48/d59b198da9eeea09f7182e9a1ad15008.png"></div><div>&nbsp;</div><div>&nbsp;</div></div>
+        </div><div class="question">
+            <h2>2. Cryptography</h2>
+            <div></div>
+            <div>Each variable below is a distinct digit . Figure out the values and the answer the following questions :<br>&nbsp;ZOR + ZOO = AZZ,&nbsp; Given that O = 5<br><br>What is the value of Z ?</div>
+            <div><strong>Options:</strong></div>
+            <ul>
+                <li>A. 3</li><li>B. 6</li><li>C. 4</li><li class="correct-answer">D. 1</li>
+            </ul>
+            <div><strong>Correct Answer:</strong> <span class="correct-answer">D</span></div>
+            <div class="explanation"><strong>Explanation:</strong> <table align="left" cellpadding="0" cellspacing="0"><tbody><tr><td align="left">ZOR&nbsp; +&nbsp; ZOO = AZZ<br>Given that O=5<br>Put O=5 we will get:<br>Z5R + Z55 = AZZ<br>Now If we add the digits at the tens place of both numbers we will get Z=0, which is not possible because a number cannot start with 0.<br>Now a maximum carry over can be of 1. So 5+5+1=11 which means Z=1.<br>Now if we put Z=1, we will get :<br>15R +155 = A11, now we can easily figure out that to get the unit digit as 1.R has to be 6. So if R =6 then A=3.<br>Now the final solution will be :<br>156+155=311</td></tr></tbody></table><div style="clear:both;"><br>Value of Z =1</div></div>
+        </div><div class="question">
+            <h2>3. Cryptography</h2>
+            <div></div>
+            <div>Each variable below is a distinct digit . Figure out the values and the answer the following questions :<br>&nbsp;ZOR + ZOO = AZZ,&nbsp; Given that O = 5<br><br>What is the difference between R and A?</div>
+            <div><strong>Options:</strong></div>
+            <ul>
+                <li>A. 1</li><li>B. 2</li><li class="correct-answer">C. 3</li><li>D. None of these</li>
+            </ul>
+            <div><strong>Correct Answer:</strong> <span class="correct-answer">C</span></div>
+            <div class="explanation"><strong>Explanation:</strong> <table align="left" cellpadding="0" cellspacing="0"><tbody><tr><td align="left">ZOR&nbsp; +&nbsp; ZOO = AZZ<br>Given that O=5<br>Put O=5 we will get:<br>Z5R + Z55 = AZZ<br>Now If we add the digits at the tens place of both numbers we will get Z=0, which is not possible because a number cannot start with 0.<br>Now a maximum carry over can be of 1. So 5+5+1=11 which means Z=1.<br>Now if we put Z=1, we will get :<br>15R +155 = A11, now we can easily figure out that to get the unit digit as 1.R has to be 6. So if R =6 then A=3.<br>Now the final solution will be :<br>156+155=311</td></tr></tbody></table><div style="clear:both;"><br>Difference between R and A is 3</div></div>
+        </div><div class="question">
+            <h2>4. Cryptography</h2>
+            <div></div>
+            <div>Each variable below is a distinct digit . Figure out the values and the answer the following questions :<br>&nbsp;ZOR + ZOO = AZZ,&nbsp; Given that O = 5<br><br>What is the difference between ZOR and ZOO?</div>
+            <div><strong>Options:</strong></div>
+            <ul>
+                <li>A. 12</li><li class="correct-answer">B. 1</li><li>C. 23</li><li>D. 10</li>
+            </ul>
+            <div><strong>Correct Answer:</strong> <span class="correct-answer">B</span></div>
+            <div class="explanation"><strong>Explanation:</strong> <table align="left" cellpadding="0" cellspacing="0"><tbody><tr><td align="left">ZOR&nbsp; +&nbsp; ZOO = AZZ<br>Given that O=5<br>Put O=5 we will get:<br>Z5R + Z55 = AZZ<br>Now If we add the digits at the tens place of both numbers we will get Z=0, which is not possible because a number cannot start with 0.<br>Now a maximum carry over can be of 1. So 5+5+1=11 which means Z=1.<br>Now if we put Z=1, we will get :<br>15R +155 = A11, now we can easily figure out that to get the unit digit as 1.R has to be 6. So if R =6 then A=3.<br>Now the final solution will be :</td></tr></tbody></table><div style="clear:both;">&nbsp;</div>156+155=311<br>Difference between ZOR and ZOO is 1</div>
+        </div><div class="question">
+            <h2>5. Cryptography</h2>
+            <div></div>
+            <div><p class="MsoBodyText" style="margin-top:10.05pt;margin-right:13.7pt;margin-bottom:0.0001pt;margin-left:0in;line-height:115%;"><span style="font-size:12pt;line-height:115%;">Each variable below is a distinct digit . Figure out the values and the answer the following questions :</span></p><p class="MsoNormal" style="margin-bottom:0.0001pt;line-height:normal;background:#FFFFFF;"><span lang="en-in" xml:lang="en-in"><span>&nbsp;</span>ZOR + ZOO = AZZ,<span>&nbsp; </span>Given that O = 5<br><br>What will be the code for RAZOR ?</span><br>&nbsp;</p></div>
+            <div><strong>Options:</strong></div>
+            <ul>
+                <li class="correct-answer">A. 63156</li><li>B. 31653</li><li>C. 24352</li><li>D. None of these</li>
+            </ul>
+            <div><strong>Correct Answer:</strong> <span class="correct-answer">A</span></div>
+            <div class="explanation"><strong>Explanation:</strong> <table align="left" cellpadding="0" cellspacing="0"><tbody><tr><td align="left">ZOR&nbsp; +&nbsp; ZOO = AZZ<br>Given that O=5<br>Put O=5 we will get:<br>Z5R + Z55 = AZZ<br>Now If we add the digits at the tens place of both numbers we will get Z=0, which is not possible because a number cannot start with 0.<br>Now a maximum carry over can be of 1. So 5+5+1=11 which means Z=1.<br>Now if we put Z=1, we will get :<br>15R +155 = A11, now we can easily figure out that to get the unit digit as 1.R has to be 6. So if R =6 then A=3.<br>Now the final solution will be :<br>156+155=311</td></tr></tbody></table><div style="clear:both;"><br>Code for RAZOR will be 63156</div></div>
+        </div><div class="question">
+            <h2>6. Spatial Reasoning</h2>
+            <div></div>
+            <div>Count the number of differences between the two images shown below.<br><br><img alt="" src="https://questionbank.hitbullseye.com/data/75c9295fbe0953ffdff8dc77459dbf48/c2d96cb7b913fde215b5a6094335fc49.png"></div>
+            <div><strong>Options:</strong></div>
+            <ul>
+                <li class="correct-answer">A. 7</li><li>B. 6</li><li>C. 8</li><li>D. 9</li>
+            </ul>
+            <div><strong>Correct Answer:</strong> <span class="correct-answer">A</span></div>
+            <div class="explanation"><strong>Explanation:</strong> The difference between the above two images are as follows:<br>1. No. of teeths of a person are less in right image.<br>2. Straw in red cup is straight.<br>3. Bowl is missing just below the red cup.<br>4. Spoon is missing in the bowl just near the yellow cup.<br>5. Colour of tissue paper just near the bananas.<br>6. Colour of dish is different on the right side.<br>7. Difference in the type of chairs.<br>These differences are also shown below.<br><img alt="" src="https://questionbank.hitbullseye.com/data/75c9295fbe0953ffdff8dc77459dbf48/68492fbae50e517787272776deb768bb.png"></div>
+        </div><div class="question">
+            <h2>7. Spatial Reasoning</h2>
+            <div></div>
+            <div>An intersection is where two or more lines and/or curves meet or cross. How many intersections are there in the figure?<br><br><img alt="" src="https://questionbank.hitbullseye.com/data/75c9295fbe0953ffdff8dc77459dbf48/dd1482c37ae08ae4711d8ddeff93eb90.png"></div>
+            <div><strong>Options:</strong></div>
+            <ul>
+                <li class="correct-answer">A. 44</li><li>B. 42</li><li>C. 45</li><li>D. 41</li>
+            </ul>
+            <div><strong>Correct Answer:</strong> <span class="correct-answer">A</span></div>
+            <div class="explanation"><strong>Explanation:</strong> There are total 44 intersection points as shown below.<br><img alt="" src="https://questionbank.hitbullseye.com/data/75c9295fbe0953ffdff8dc77459dbf48/8a1ed073d23f34bba0ebb913561d48bd.png"></div>
+        </div><div class="question">
+            <h2>8. Spatial Reasoning</h2>
+            <div></div>
+            <div>There are different types of pineapples in the given figure. How many pineapples appear only once?<br><br><img alt="" src="https://questionbank.hitbullseye.com/data/75c9295fbe0953ffdff8dc77459dbf48/4b120e5b96d6c30c68594f68b3ebc01f.png"></div>
+            <div><strong>Options:</strong></div>
+            <ul>
+                <li class="correct-answer">A. 2</li><li>B. 4</li><li>C. 6</li><li>D. 8</li>
+            </ul>
+            <div><strong>Correct Answer:</strong> <span class="correct-answer">A</span></div>
+            <div class="explanation"><strong>Explanation:</strong> There are only two types of pineapples i.e. type 4 and type 7 as shown below in the diagram.<br><img alt="" src="https://questionbank.hitbullseye.com/data/75c9295fbe0953ffdff8dc77459dbf48/9623f5e452231002998c97fc23a341c6.png"><br><br></div>
+        </div><div class="question">
+            <h2>9. Encripted Problems</h2>
+            <div></div>
+            <div><div>In the following addition problem, each different letter represents a different single digit integer and the same letter represents the same single digit integer.</div><div>&nbsp;</div><div><img alt="" src="https://questionbank.hitbullseye.com/data/75c9295fbe0953ffdff8dc77459dbf48/821c8dd5da76db822da0cf4e6f904430.png"></div><div>&nbsp;</div><div>The sum of O and V is</div></div>
+            <div><strong>Options:</strong></div>
+            <ul>
+                <li>A. <div>10</div></li><li>B. <div>13</div></li><li class="correct-answer">C. <div>15</div></li><li>D. <div>12</div></li>
+            </ul>
+            <div><strong>Correct Answer:</strong> <span class="correct-answer">C</span></div>
+            <div class="explanation"><strong>Explanation:</strong> <div><div>Here, S+Y = Y, the possible value of S is only 0. If there is no carryover from the sum of R+R, then U+E = U that means E = 0 but S is zero. So, there must be carryover of 1from the sum R+R.</div><div>∴ 1+U+E = 10+U ⇒ E = 9. Now, R+R = 10+L ⇒ 2R=L +10 ⇒ L is even.</div><div>So, possible values of L = 2, 4, 6, 8. If L = 8 then R = 9 which is impossible as E= 9.</div><div>If L = 6 then R = 8 and O + V + 1 = 10+8 = 18 ⇒ O + V = 17.</div><div>This states that there must be 9 in O and V but it is not possible. So L ≠ 6.</div><div style="text-align:justify;">If L = 4, then R = 7 and O + V + 1 = 17 ⇒ O + V = 16, not possible.</div><div>So, L ≠ 4, and hence L = 2 and R = 6. O + V + 1 = 16 ⇒ O + V = 15.</div><div>So, values of O &amp; V are 8, 7 and vice-versa. So, we have 1,3,4,5 for letters U, Y &amp; T.</div><div>But Y +1 = T. So, Y≠1, Y ≠ 5 and T ≠ 1. The possible values for U = 1,3,5; Y = 3,4 and T = 4, 5. Now, we can decode the given alphabetical problem as</div><div>&nbsp;</div><div><div>&nbsp;</div><table border="0" cellpadding="0" cellspacing="0" width="392" style="height:68px;"><tbody><tr><td><div>4</div></td><td><div>8</div></td><td><div>3</div></td><td><div>6</div></td><td><div>0</div></td><td style="width:21px;"><div>&nbsp;</div></td><td style="width:23px;"><div>4</div></td><td><div>7</div></td><td><div>3</div></td><td><div>6</div></td><td><div>0</div></td><td style="width:19px;"><div>&nbsp;</div></td><td style="width:23px;"><div>4</div></td><td><div>7</div></td><td><div>1</div></td><td><div>6</div></td><td><div>0</div></td><td style="width:21px;"><div>&nbsp;</div></td><td style="width:23px;"><div>4</div></td><td><div>8</div></td><td><div>1</div></td><td><div>6</div></td><td><div>0</div></td></tr><tr><td><div>+</div></td><td><div>7</div></td><td><div>9</div></td><td><div>6</div></td><td><div>4</div></td><td style="width:21px;"><div>&nbsp;</div></td><td style="width:23px;"><div>+</div></td><td><div>8</div></td><td><div>9</div></td><td><div>6</div></td><td><div>4</div></td><td style="width:19px;"><div>&nbsp;</div></td><td style="width:23px;"><div>+</div></td><td><div>8</div></td><td><div>9</div></td><td><div>6</div></td><td><div>4</div></td><td style="width:21px;"><div>&nbsp;</div></td><td style="width:23px;"><div>+</div></td><td><div>7</div></td><td><div>9</div></td><td><div>6</div></td><td><div>4</div></td></tr><tr><td><div>5</div></td><td><div>6</div></td><td><div>3</div></td><td><div>2</div></td><td><div>4</div></td><td style="width:21px;"><div>&nbsp;</div></td><td style="width:23px;"><div>5</div></td><td><div>6</div></td><td><div>3</div></td><td><div>2</div></td><td><div>4</div></td><td style="width:19px;"><div>&nbsp;</div></td><td style="width:23px;"><div>5</div></td><td><div>6</div></td><td><div>1</div></td><td><div>2</div></td><td><div>4</div></td><td style="width:21px;"><div>&nbsp;</div></td><td style="width:23px;"><div>5</div></td><td><div>6</div></td><td><div>1</div></td><td><div>2</div></td><td><div>4</div></td></tr></tbody></table><div>&nbsp;</div><table border="0" cellpadding="0" cellspacing="0" width="431" style="height:68px;"><tbody><tr><td><div>3</div></td><td><div>8</div></td><td><div>5</div></td><td><div>6</div></td><td><div>0</div></td><td style="width:22px;"><div>&nbsp;</div></td><td style="width:23px;"><div>3</div></td><td><div>7</div></td><td><div>5</div></td><td><div>6</div></td><td><div>0</div></td><td style="width:20px;"><div>&nbsp;</div></td><td style="width:23px;"><div>4</div></td><td><div>8</div></td><td><div>5</div></td><td><div>6</div></td><td><div>0</div></td><td style="width:22px;"><div>&nbsp;</div></td><td style="width:23px;"><div>4</div></td><td><div>7</div></td><td><div>5</div></td><td><div>6</div></td><td><div>0</div></td></tr><tr><td><div>+</div></td><td><div>7</div></td><td><div>9</div></td><td><div>6</div></td><td><div>3</div></td><td style="width:22px;"><div>&nbsp;</div></td><td style="width:23px;"><div>+</div></td><td><div>8</div></td><td><div>9</div></td><td><div>6</div></td><td><div>3</div></td><td style="width:20px;"><div>&nbsp;</div></td><td style="width:23px;"><div>+</div></td><td><div>7</div></td><td><div>9</div></td><td><div>6</div></td><td><div>4</div></td><td style="width:22px;"><div>&nbsp;</div></td><td style="width:23px;"><div>+</div></td><td><div>8</div></td><td><div>9</div></td><td><div>6</div></td><td><div>4</div></td></tr><tr><td><div>4</div></td><td><div>6</div></td><td><div>5</div></td><td><div>2</div></td><td><div>3</div></td><td style="width:22px;"><div>&nbsp;</div></td><td style="width:23px;"><div>4</div></td><td><div>6</div></td><td><div>5</div></td><td><div>2</div></td><td><div>3</div></td><td style="width:20px;"><div>&nbsp;</div></td><td style="width:23px;"><div>5</div></td><td><div>6</div></td><td><div>5</div></td><td><div>2</div></td><td><div>4</div></td><td style="width:22px;"><div>&nbsp;</div></td><td style="width:23px;"><div>5</div></td><td><div>6</div></td><td><div>5</div></td><td><div>2</div></td><td><div>4</div></td></tr></tbody></table></div></div><div>&nbsp;</div><div>O+V = 15.</div></div>
+        </div><div class="question">
+            <h2>10. Encripted Problems</h2>
+            <div></div>
+            <div><div>In the following addition problem, each different letter represents a different single digit integer and the same letter represents the same single digit integer.</div><div>&nbsp;</div><div><img alt="" src="https://questionbank.hitbullseye.com/data/75c9295fbe0953ffdff8dc77459dbf48/4f35e4b855e276e3e3254a474aa212c6.png"></div><div>&nbsp;</div><div><div>Which of the following is true?</div><div>&nbsp;</div>I. E is greater than O&nbsp;&nbsp;&nbsp; II. R is less than U&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; III. U is greater than E</div></div>
+            <div><strong>Options:</strong></div>
+            <ul>
+                <li class="correct-answer">A. <div>Only I</div></li><li>B. <div>Only II</div></li><li>C. <div>Only I and II</div></li><li>D. <div>Only I and III</div></li>
+            </ul>
+            <div><strong>Correct Answer:</strong> <span class="correct-answer">A</span></div>
+            <div class="explanation"><strong>Explanation:</strong> <div><div>Here, S+Y = Y, the possible value of S is only 0. If there is no carryover from the sum of R+R, then U+E = U that means E = 0 but S is zero. So, there must be carryover of 1from the sum R+R.</div><div>∴ 1+U+E = 10+U ⇒ E = 9. Now, R+R = 10+L ⇒ 2R=L +10 ⇒ L is even.</div><div>So, possible values of L = 2, 4, 6, 8. If L = 8 then R = 9 which is impossible as E= 9.</div><div>If L = 6 then R = 8 and O + V + 1 = 10+8 = 18 ⇒ O + V = 17.</div><div>This states that there must be 9 in O and V but it is not possible. So L ≠ 6.</div><div>If L = 4, then R = 7 and O + V + 1 = 17 ⇒ O + V = 16, not possible.</div><div>So, L ≠ 4, and hence L = 2 and R = 6. O + V + 1 = 16 ⇒ O + V = 15.</div><div>So, values of O &amp; V are 8, 7 and vice-versa. So, we have 1,3,4,5 for letters U, Y &amp; T.</div><div>But Y +1 = T. So, Y≠1, Y ≠ 5 and T ≠ 1. The possible values for U = 1,3,5; Y = 3,4 and T = 4, 5. Now, we can decode the given alphabetical problem as</div><div>&nbsp;</div><table border="0" cellpadding="0" cellspacing="0" width="438" style="height:68px;"><tbody><tr><td><div>4</div></td><td><div>8</div></td><td><div>3</div></td><td><div>6</div></td><td><div>0</div></td><td style="width:21px;"><div>&nbsp;</div></td><td style="width:23px;"><div>4</div></td><td><div>7</div></td><td><div>3</div></td><td><div>6</div></td><td><div>0</div></td><td style="width:19px;"><div>&nbsp;</div></td><td style="width:23px;"><div>4</div></td><td><div>7</div></td><td><div>1</div></td><td><div>6</div></td><td><div>0</div></td><td style="width:21px;"><div>&nbsp;</div></td><td style="width:23px;"><div>4</div></td><td><div>8</div></td><td><div>1</div></td><td><div>6</div></td><td><div>0</div></td></tr><tr><td><div>+</div></td><td><div>7</div></td><td><div>9</div></td><td><div>6</div></td><td><div>4</div></td><td style="width:21px;"><div>&nbsp;</div></td><td style="width:23px;"><div>+</div></td><td><div>8</div></td><td><div>9</div></td><td><div>6</div></td><td><div>4</div></td><td style="width:19px;"><div>&nbsp;</div></td><td style="width:23px;"><div>+</div></td><td><div>8</div></td><td><div>9</div></td><td><div>6</div></td><td><div>4</div></td><td style="width:21px;"><div>&nbsp;</div></td><td style="width:23px;"><div>+</div></td><td><div>7</div></td><td><div>9</div></td><td><div>6</div></td><td><div>4</div></td></tr><tr><td><div>5</div></td><td><div>6</div></td><td><div>3</div></td><td><div>2</div></td><td><div>4</div></td><td style="width:21px;"><div>&nbsp;</div></td><td style="width:23px;"><div>5</div></td><td><div>6</div></td><td><div>3</div></td><td><div>2</div></td><td><div>4</div></td><td style="width:19px;"><div>&nbsp;</div></td><td style="width:23px;"><div>5</div></td><td><div>6</div></td><td><div>1</div></td><td><div>2</div></td><td><div>4</div></td><td style="width:21px;"><div>&nbsp;</div></td><td style="width:23px;"><div>5</div></td><td><div>6</div></td><td><div>1</div></td><td><div>2</div></td><td><div>4</div></td></tr></tbody></table><div>&nbsp;</div><table border="0" cellpadding="0" cellspacing="0" width="449" style="height:68px;"><tbody><tr><td><div>3</div></td><td><div>8</div></td><td><div>5</div></td><td><div>6</div></td><td><div>0</div></td><td style="width:22px;"><div>&nbsp;</div></td><td style="width:23px;"><div>3</div></td><td><div>7</div></td><td><div>5</div></td><td><div>6</div></td><td><div>0</div></td><td style="width:20px;"><div>&nbsp;</div></td><td style="width:23px;"><div>4</div></td><td><div>8</div></td><td><div>5</div></td><td><div>6</div></td><td><div>0</div></td><td style="width:22px;"><div>&nbsp;</div></td><td style="width:23px;"><div>4</div></td><td><div>7</div></td><td><div>5</div></td><td><div>6</div></td><td><div>0</div></td></tr><tr><td><div>+</div></td><td><div>7</div></td><td><div>9</div></td><td><div>6</div></td><td><div>3</div></td><td style="width:22px;"><div>&nbsp;</div></td><td style="width:23px;"><div>+</div></td><td><div>8</div></td><td><div>9</div></td><td><div>6</div></td><td><div>3</div></td><td style="width:20px;"><div>&nbsp;</div></td><td style="width:23px;"><div>+</div></td><td><div>7</div></td><td><div>9</div></td><td><div>6</div></td><td><div>4</div></td><td style="width:22px;"><div>&nbsp;</div></td><td style="width:23px;"><div>+</div></td><td><div>8</div></td><td><div>9</div></td><td><div>6</div></td><td><div>4</div></td></tr><tr><td><div>4</div></td><td><div>6</div></td><td><div>5</div></td><td><div>2</div></td><td><div>3</div></td><td style="width:22px;"><div>&nbsp;</div></td><td style="width:23px;"><div>4</div></td><td><div>6</div></td><td><div>5</div></td><td><div>2</div></td><td><div>3</div></td><td style="width:20px;"><div>&nbsp;</div></td><td style="width:23px;"><div>5</div></td><td><div>6</div></td><td><div>5</div></td><td><div>2</div></td><td><div>4</div></td><td style="width:22px;"><div>&nbsp;</div></td><td style="width:23px;"><div>5</div></td><td><div>6</div></td><td><div>5</div></td><td><div>2</div></td><td><div>4</div></td></tr></tbody></table></div><div>&nbsp;</div><div><div>E = 9 and O = 8, 7. Hence E &gt; O, I is correct.</div><div>R = 6 and U = 1, 3,4,5. Hence R &gt; U, II is wrong.</div>U = 1, 3, 4, 5 and E = 9. Hence U &lt; E, III is wrong.</div><div>&nbsp;</div></div>
+        </div><div class="question">
+            <h2>11. Spatial Reasoning</h2>
+            <div></div>
+            <div><span style="font-size:11pt;">Shown below are sole designs of slippers, of which some are matched-pairs (one left foot and one right foot). Identify the total number of matched-pairs in the image.<br><br><img alt="" src="https://questionbank.hitbullseye.com/data/75c9295fbe0953ffdff8dc77459dbf48/7931c2f2414b4046ce9ff8fc2c200329.png"></span><br></div>
+            <div><strong>Options:</strong></div>
+            <ul>
+                <li>A. 4</li><li class="correct-answer">B. 3</li><li>C. 5</li><li>D. 6</li>
+            </ul>
+            <div><strong>Correct Answer:</strong> <span class="correct-answer">B</span></div>
+            <div class="explanation"><strong>Explanation:</strong> Let the names of left foots be L1, L2, L3 and so on and similarly for right foots names will be R1, R2, R3 and so on, such that L1 and R1 are making a pair of shoe.<br>Now, on seeing carefully from left hand side the small trianglular type portion of L1 matches with the small triangular portion of R1, and on seeing carefully all other portion are also matching and hence this forms a pair as shown in figure given below.<br>Similarly, for L2 a small triangular part is matching with R2 and same for L3 and R3 small part of leaf type is matching as shown in figure.<br>Rest all are of same type as there is common portion of type&nbsp;<img alt="" src="https://questionbank.hitbullseye.com/data/75c9295fbe0953ffdff8dc77459dbf48/7a13b6ea1f1ed8e8624d40e2a24e2f86.png">&nbsp;in all.<br>Hence, there are only 3 pairs of shoes.<br><img alt="" src="https://questionbank.hitbullseye.com/data/75c9295fbe0953ffdff8dc77459dbf48/1e10235c1eebd88ece89ab75d16e7716.png">&nbsp;</div>
+        </div><div class="question">
+            <h2>12. Spatial Reasoning</h2>
+            <div></div>
+            <div><span style="font-size:11pt;">A solid object made of cubes is shown below. This object is symmetric about all three axes,<b> </b>and does not contain cavities (no hollow spaces). How many cubes does the solid contain?<br><img alt="" src="https://questionbank.hitbullseye.com/data/75c9295fbe0953ffdff8dc77459dbf48/22bb5bc7d4892d854dfd8f8d354442b0.png"></span><br></div>
+            <div><strong>Options:</strong></div>
+            <ul>
+                <li class="correct-answer">A. 57</li><li>B. 59</li><li>C. 61</li><li>D. 63</li>
+            </ul>
+            <div><strong>Correct Answer:</strong> <span class="correct-answer">A</span></div>
+            <div class="explanation"><strong>Explanation:</strong> Since, the object is symmetric so we have to count the additional cubes in each layer.<br>The number of cubes in first layer = 5<br>Now, in second layer there are 8 additional cubes. So, number of cubes in second layer = 5 + 8 = 13<br>In third layer, there are again 8 additional cubes. So, number of cubes in third layer = 13 + 8 = 21<br>Since, figure being symmetric<br>Thus, the fourth layer is symmetric to second layer. So, number of cubes in fourth layer = 13<br>Also, the fifth layer is symmetric to first ayer. So, number of cubes in fifth layer = 5<br>So, total number of cubes = 5 + 13 + 21 + 13 + 5 = 57</div>
+        </div><div class="question">
+            <h2>13. Spatial Reasoning</h2>
+            <div></div>
+            <div><span style="font-size:11pt;">The image given below is made out of separate pieces. What is the least number of pieces that need to be moved and/or rotated and/or flipped for achieving symmetry about the central vertical axis?<br><img alt="" src="https://questionbank.hitbullseye.com/data/75c9295fbe0953ffdff8dc77459dbf48/1f84c87efa54fc7025e2406946c4e926.png"></span><br></div>
+            <div><strong>Options:</strong></div>
+            <ul>
+                <li>A. 11</li><li class="correct-answer">B. 9</li><li>C. 15</li><li>D. 7</li>
+            </ul>
+            <div><strong>Correct Answer:</strong> <span class="correct-answer">B</span></div>
+            <div class="explanation"><strong>Explanation:</strong> The below image shows the images.<br><br><img alt="" src="https://questionbank.hitbullseye.com/data/75c9295fbe0953ffdff8dc77459dbf48/491fc60e27875811d79269142cb0b47a.png"><br><br></div>
+        </div><div class="question">
+            <h2>14. Spatial Reasoning</h2>
+            <div></div>
+            <div>The grid of squares shown in the figure is to be tiled (covered with tiles) with the tiles shown in the options. The covering tiles must not overlap and should not have gaps around them. Only four squares in the middle are not to be tiled. Once a tile is chosen, other tiles must be of that type only. Tiles can be flipped and rotated if required. Which of the tiles can be used to tile the given grid?&nbsp;<br><br><img alt="" src="https://questionbank.hitbullseye.com/data/75c9295fbe0953ffdff8dc77459dbf48/bef6ac6ff78ed92c96e68587ae989503.png"></div>
+            <div><strong>Options:</strong></div>
+            <ul>
+                <li>A. 1</li><li>B. 2</li><li class="correct-answer">C. 3</li><li>D. 4</li>
+            </ul>
+            <div><strong>Correct Answer:</strong> <span class="correct-answer">C</span></div>
+            <div class="explanation"><strong>Explanation:</strong> By replacing the 3rd tile grid in different rotations the square grid satisfies all conditions as this option completes the cell without overlapping and there is no gap left in between,whereas other options do not satisfies the conditions.&nbsp;Hence option C is the correct answer.</div>
+        </div><div class="question">
+            <h2>15. Spatial Reasoning</h2>
+            <div></div>
+            <div><span style="font-size:11pt;">Tile X was used to create a seamless pattern when arranged as shown below. Which tile(s) from the options will create a seamless pattern (pattern without gaps)?</span><br><br><img alt="" src="https://questionbank.hitbullseye.com/data/75c9295fbe0953ffdff8dc77459dbf48/bf748662f8948245e4e616a2ba1cf1cd.png"></div>
+            <div><strong>Options:</strong></div>
+            <ul>
+                <li>A. Only C</li><li>B. Only A &amp; B</li><li>C. Only B &amp; C</li><li class="correct-answer">D. Only C &amp; D</li>
+            </ul>
+            <div><strong>Correct Answer:</strong> <span class="correct-answer">D</span></div>
+            <div class="explanation"><strong>Explanation:</strong> Basically, in figure X if we see carefully, the fig. X is placed which is denoted by point H. Lets say it is rotated and placed on the top which is denoted by J. Again it is rotated and placed at the bottom which is denoted by P (say), so that there is no gap in between.<br><img alt="" src="https://questionbank.hitbullseye.com/data/75c9295fbe0953ffdff8dc77459dbf48/94e341c2353159e3cb9922dfb082c6f5.png"><br>So, we need to find the option which on rotating can be fixed in the original figure.&nbsp;So, going by options, for figure C and D it is possible.</div>
+        </div><div class="question">
+            <h2>16. Spatial Reasoning</h2>
+            <div></div>
+            <div><span style="font-size:11pt;">Which of the options on the right can be formed by folding the profile shown on the left?<br><img alt="" src="https://questionbank.hitbullseye.com/data/75c9295fbe0953ffdff8dc77459dbf48/c231924459485319ae9a3b722cbd6b8a.png"></span><br></div>
+            <div><strong>Options:</strong></div>
+            <ul>
+                <li>A. Only A &amp; C</li><li>B. Only B &amp; C</li><li class="correct-answer">C. Only B, C &amp; D</li><li>D. Only A, B &amp; D</li>
+            </ul>
+            <div><strong>Correct Answer:</strong> <span class="correct-answer">C</span></div>
+            <div class="explanation"><strong>Explanation:</strong> Let A, B, C, D be the faces and A', B', C', D' be the faces which come under the face A, B, C, D respectively as shown below.<br><img alt="" src="https://questionbank.hitbullseye.com/data/75c9295fbe0953ffdff8dc77459dbf48/e3507c64c52a976be6a9dd3e2473fd87.png"><br>And numbers also to the faces.<br>Now, checking for options.&nbsp;Option A gets eliminated, rest B, C and D satisfies.<br><br></div>
+        </div><div class="question">
+            <h2>17. Encripted Problems</h2>
+            <div></div>
+            <div><div><div>Given below is a multiplication operation, where each alphabet represents a number, based on it,</div></div><div><img alt="" src="https://questionbank.hitbullseye.com/data/75c9295fbe0953ffdff8dc77459dbf48/46cf20cfd1bc90fc172a8e5c593d0bbd.png"></div><div>&nbsp;</div><div>What is the value of B?</div></div>
+            <div><strong>Options:</strong></div>
+            <ul>
+                <li>A. <div>3</div></li><li>B. <div>4</div></li><li class="correct-answer">C. <div>2</div></li><li>D. <div>1</div></li>
+            </ul>
+            <div><strong>Correct Answer:</strong> <span class="correct-answer">C</span></div>
+            <div class="explanation"><strong>Explanation:</strong> <div>In a two by two multiplication if D is multiplied by D and the digit comes out to be 6 the possible combinations are – {4,4} or {6,6}, but since the second digit is five in the first step of multiplication , therefore&nbsp; D = 4 and A=1. In the second step of multiplication Z = 0, the maximum value H can take is 9 , since there is no carry so H= 8 because in the result 3 is given. For H to be 8 , B has to be 2. Hence option 3.</div></div>
+        </div><div class="question">
+            <h2>18. Encripted Problems</h2>
+            <div></div>
+            <div><div><div><div>Given below is a multiplication operation, where each alphabet represents a number, based on it,</div></div><img alt="" src="https://questionbank.hitbullseye.com/data/75c9295fbe0953ffdff8dc77459dbf48/2b08c11c6e000741b0d81f976200e711.png"><div>What is the value of DB + AD - BH?</div></div><div>&nbsp;</div></div>
+            <div><strong>Options:</strong></div>
+            <ul>
+                <li>A. <div>10</div></li><li>B. <div>22</div></li><li>C. <div>12</div></li><li class="correct-answer">D. <div>28</div></li>
+            </ul>
+            <div><strong>Correct Answer:</strong> <span class="correct-answer">D</span></div>
+            <div class="explanation"><strong>Explanation:</strong> <div>In a two by two multiplication if D is multiplied by D and the digit comes out to be 6 the possible combinations are – {4,4} or {6,6}, but since the second digit is five in the first step of multiplication , therefore&nbsp; D = 4 and A=1. In the second step of multiplication Z = 0, the maximum value H can take is 9 , since there is no carry so H= 8 because in the result 3 is given. For H to be 8 , B has to be 2. Now, DB = 42; AD = 14; BH = 28. So, DB + AD - BH = 28.</div></div>
+        </div><div class="question">
+            <h2>19. Spatial Reasoning</h2>
+            <div></div>
+            <div><span style="font-size:11pt;">If the geometric solid blocks shown below, are cut along a single flat plane, which of these can have the cross section of a regular hexagon (all sides equal)? Assume, all blocks are extruded from polygons with sides of equal length.<br><br><img alt="" src="https://questionbank.hitbullseye.com/data/75c9295fbe0953ffdff8dc77459dbf48/d6f41156d1f308751ae920a3110e2af5.png"></span><br></div>
+            <div><strong>Options:</strong></div>
+            <ul>
+                <li class="correct-answer">A. Only 1 &amp; 2</li><li>B. Only 2 &amp; 3</li><li>C. Only 3 &amp; 4</li><li>D. Only 1 &amp; 4</li>
+            </ul>
+            <div><strong>Correct Answer:</strong> <span class="correct-answer">A</span></div>
+            <div class="explanation"><strong>Explanation:</strong> Going by options, only option 1st and 2nd will form a cross section of hexagon</div>
+        </div><div class="question">
+            <h2>20. Spatial Reasoning</h2>
+            <div></div>
+            <div><span style="font-size:11pt;">The following patterns are made on a wall by using ceramic tiles. Which of the given patterns is/are made from a single type of tile?'<br><br><img alt="" src="https://questionbank.hitbullseye.com/data/75c9295fbe0953ffdff8dc77459dbf48/d1f539c738e8f85a4db124e5e0f8a4a1.png"></span><br></div>
+            <div><strong>Options:</strong></div>
+            <ul>
+                <li>A. Only 1 &amp; 2</li><li class="correct-answer">B. Only 1 &amp; 3</li><li>C. Only 2 &amp; 4</li><li>D. Only 3 &amp; 4</li>
+            </ul>
+            <div><strong>Correct Answer:</strong> <span class="correct-answer">B</span></div>
+            <div class="explanation"><strong>Explanation:</strong> Option 2 gets cancelled because all others except the last portion of tile is roating in an clockwise direction, whereas all others are rotating in a anticlockwise direction.<br>Option 4 also gets eliminated because some portion of tile is roating in an anticlockwise direction, whereas all others are rotating in a clockwise direction.<br>Hence, option 1 and 3 satisfies.</div>
+        </div><div class="question">
+            <h2>21. Spatial Reasoning</h2>
+            <div></div>
+            <div><span style="font-size:11pt;">Multiple pages of a book are often printed on a single sheet. The sheet is later folded and cut appropriately to get the pages in a correct sequence and orientation. Mistakes happened while printing this particular 16 page booklet. The sheet was printed with pages numbered and oriented as shown on the left. The sheet was folded and cut in the sequence as shown on the right. Given this, which of the options is/are TRUE about the final booklet?<br><img alt="" src="https://questionbank.hitbullseye.com/data/75c9295fbe0953ffdff8dc77459dbf48/be98f330ebe7828126a0033f7f19b965.png"><br>A. Page 13 appears before page 10<br>B. Page 11 is the last odd-numbered page<br>C. Page 4 is the first even-numbered page<br>D. All pages appear in the correct orientation</span><br></div>
+            <div><strong>Options:</strong></div>
+            <ul>
+                <li>A. Only A, C and D</li><li class="correct-answer">B. Only A, B and D</li><li>C. Only B, C and D</li><li>D. Only A, B and C</li>
+            </ul>
+            <div><strong>Correct Answer:</strong> <span class="correct-answer">B</span></div>
+            <div class="explanation"><strong>Explanation:</strong> If we consider a paper whose front is yellow with number in same manner and back is blue with number in same manner holding the paper as per direction given, we get a sequence of number in order as : 5,6,7,8,13,14,15,16,1,2,3,4,9,10,11,12<br>Now verifying the statements using this sequence of numbers all statements follow other than C.&nbsp;Hence the answer is ABD<br><br></div>
+        </div><div class="question">
+            <h2>22. Spatial Reasoning</h2>
+            <div></div>
+            <div><div style="text-align:justify;">Shown below are pieces of a regular polygon. How many sides does the polygon have?<br><br><img alt="" src="https://questionbank.hitbullseye.com/data/75c9295fbe0953ffdff8dc77459dbf48/c27cd2c2dfa37d9ba76dc4480ac27e95.png"></div></div>
+            <div><strong>Options:</strong></div>
+            <ul>
+                <li class="correct-answer">A. 7</li><li>B. 8</li><li>C. 9</li><li>D. 10</li>
+            </ul>
+            <div><strong>Correct Answer:</strong> <span class="correct-answer">A</span></div>
+            <div class="explanation"><strong>Explanation:</strong> <span style="color:rgb(34,34,34);font-family:Arial, Tahoma, Helvetica, FreeSans, sans-serif;font-size:13.2px;background-color:rgb(255,255,255);">let us give numbering to the question figure</span><br><span style="color:rgb(34,34,34);font-family:Arial, Tahoma, Helvetica, FreeSans, sans-serif;font-size:13.2px;background-color:rgb(255,255,255);"><span style="color:rgb(34,34,34);font-family:Arial, Tahoma, Helvetica, FreeSans, sans-serif;font-size:13.2px;background-color:rgb(255,255,255);"><img alt="" src="https://questionbank.hitbullseye.com/data/75c9295fbe0953ffdff8dc77459dbf48/80c5d3a23c9a47ef4f10355774ca154f.png"></span><br><br><br>Now arrange them as follows</span><br><br><span style="color:rgb(34,34,34);font-family:Arial, Tahoma, Helvetica, FreeSans, sans-serif;font-size:13.2px;background-color:rgb(255,255,255);"><br>so the ans will be 7 .</span></div>
+        </div><div class="question">
+            <h2>23. Spatial Reasoning</h2>
+            <div></div>
+            <div><div style="text-align:justify;">How many of the alphabets using the font shown below when flipped on the horizontal axis, can still be read as capital alphabets in the same font?<br><br><img alt="" src="https://questionbank.hitbullseye.com/data/75c9295fbe0953ffdff8dc77459dbf48/beaaa2dfaf8449733b9a8710740407df.png"></div></div>
+            <div><strong>Options:</strong></div>
+            <ul>
+                <li>A. 9</li><li>B. 10</li><li class="correct-answer">C. 11</li><li>D. 12</li>
+            </ul>
+            <div><strong>Correct Answer:</strong> <span class="correct-answer">C</span></div>
+            <div class="explanation"><strong>Explanation:</strong> Alphabets when flipped on the horizontal axis and still can be read as capital alphabets in the same font are&nbsp;<br>B C D E H I K M O W X ( M canbe read as W and W as M) ans is 11<br></div>
+        </div><div class="question">
+            <h2>24. Spatial Reasoning</h2>
+            <div></div>
+            <div><div style="text-align:justify;">Shown below is a fan with red coloured patterns on it. When it rotates, the patterns make circles. How many red circles will be seen when the fan rotates?<br><br><img alt="" src="https://questionbank.hitbullseye.com/data/75c9295fbe0953ffdff8dc77459dbf48/c4822ef9c081f2bdefb1fc07a4b4ecf1.png"></div></div>
+            <div><strong>Options:</strong></div>
+            <ul>
+                <li>A. 5</li><li>B. 6</li><li>C. 7</li><li class="correct-answer">D. 8</li>
+            </ul>
+            <div><strong>Correct Answer:</strong> <span class="correct-answer">D</span></div>
+            <div class="explanation"><strong>Explanation:</strong> <img alt="" src="https://questionbank.hitbullseye.com/data/75c9295fbe0953ffdff8dc77459dbf48/6fb294ee987eb8759922b203bad31074.png"><br><br>There will be 8 red circles as shown in fig.&nbsp; (some lines coincides) zigzag lines will not make circle.<br><br></div>
+        </div><div class="question">
+            <h2>25. Spatial Reasoning</h2>
+            <div></div>
+            <div><div style="text-align:justify;">Two gears A and B with red arrows are shown below. Gear A rotates in clockwise direction. How many complete rotations does the gear B have to make for the red arrows to meet?<br><br><img alt="" src="https://questionbank.hitbullseye.com/data/75c9295fbe0953ffdff8dc77459dbf48/42e30fba99fe05d8f57968a22c4159e4.png"></div></div>
+            <div><strong>Options:</strong></div>
+            <ul>
+                <li>A. 8</li><li>B. 9</li><li class="correct-answer">C. 10</li><li>D. 11</li>
+            </ul>
+            <div><strong>Correct Answer:</strong> <span class="correct-answer">C</span></div>
+            <div class="explanation"><strong>Explanation:</strong> <img alt="" src="https://questionbank.hitbullseye.com/data/75c9295fbe0953ffdff8dc77459dbf48/d04e9db0f961e8747ef4bd76698af9e1.png"><br><br>For red arrows of Gear A and Gear B to meet,<br>&nbsp;&nbsp; Arrow of&nbsp; A should be at 4 and&nbsp; B to be at B1&nbsp; (see fig above)<br>&nbsp;&nbsp; When Gear B rotates full 1 time Gear A position will be 7, like wise<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2 times Gear A position will be 3<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3 times Gear A position will be 10<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4 times Gear A position will be 6<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5 times Gear A position will be 2<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6 times&nbsp; Gear A position will be 9<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 7 times Gear A position will be&nbsp; 5<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 8 times Gear A position will be 1<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 9 times&nbsp; Gear A position will be 8<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 10 times Gear A position will be 4 ( required)<br>&nbsp;<br>Gear B will make 10 complete rotation .&nbsp;<br>(It can be solved by gear ratio method&nbsp; )&nbsp;<br><br><br></div>
+        </div><div class="question">
+            <h2>26. Spatial Reasoning</h2>
+            <div></div>
+            <div><div style="text-align:justify;">There are two discs, one with numbers and other with three cut-outs as shown in the figure 1 and are overlapped as shown in figure 2. For every second, the numbered disc rotates two numbers in anti-clockwise direction and the cut-out disc rotates one number in the clockwise direction. If the arrangement at zero second is as shown in figure 2, what will be the number inside the pentagonal cut-out at 5 seconds?<br><br><img alt="" src="https://questionbank.hitbullseye.com/data/75c9295fbe0953ffdff8dc77459dbf48/4ae023a23b9b4b0715acb0c8dd3cff7a.png"></div></div>
+            <div><strong>Options:</strong></div>
+            <ul>
+                <li class="correct-answer">A. 3</li><li>B. 4</li><li>C. 5</li><li>D. 6</li>
+            </ul>
+            <div><strong>Correct Answer:</strong> <span class="correct-answer">A</span></div>
+            <div class="explanation"><strong>Explanation:</strong> Given, at each second, the numbered disc rotates two numbers in anti-clockwise direction while the cut-out disc rotates 1 no. in clockwise. So, relatively, for every sec, the numbered disc moves 2+1 = 3no.s, assuming that the cut-out disc is held stationary.<br><br>So, after 5 secs, the no. should have been moved 3*5 = 15 times in anti clockwise direction. So, taking no. 8 as the start/refernce, move anticlockwise 15 times which will give the required no. which will appear in the pentagon after 5 secs.<br>required number is 3</div>
+        </div><div class="question">
+            <h2>27. Cryptography</h2>
+            <div></div>
+            <div>Each variable below is a distinct digit . Figure out the values and the answer the following questions:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; P E E P<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +&nbsp; D E E P<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +&nbsp; <u>B E E P</u><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; L&nbsp; I&nbsp; P S<br><br><br>What is the value of P?</div>
+            <div><strong>Options:</strong></div>
+            <ul>
+                <li>A. 1</li><li>B. 3</li><li class="correct-answer">C. 2</li><li>D. 0</li>
+            </ul>
+            <div><strong>Correct Answer:</strong> <span class="correct-answer">C</span></div>
+            <div class="explanation"><strong>Explanation:</strong> <table align="left" cellpadding="0" cellspacing="0"><tbody><tr><td align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;P E E P<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; D E E P<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +&nbsp; <u>B E E P</u><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; L&nbsp; I&nbsp; P S<br>&nbsp;<br>Lets start with the units place. If we put P =0, we will get S=0, which is not possible as each letter has a distinct value.</td></tr></tbody></table><div style="clear:both;">&nbsp;</div>If we put P =1 then S=3, Now&nbsp; when P =1 then E = 7, because 7+7+7 will end<br><table align="left" cellpadding="0" cellspacing="0"><tbody><tr><td align="left">with a 1.&nbsp; So now we will get :<br>&nbsp;<br>&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1 7 7 1<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; D 7 7 1<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +&nbsp;<u> B 7 7 1</u><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; L&nbsp; I&nbsp; 1 3<br>Now at the hundreds place there will be a carry over of 2, because of which we will get I=3(7+7+7+2=23) , Now both I=S=3 which is not possible. So P=1,this case is invalid<br><table align="left" cellpadding="0" cellspacing="0"><tbody><tr><td align="left">Now if we put P=2 then S=6, Now when P=2 then E=4, because 4+4+4 will end with a 2. So now we will get:<br>&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2 4 4 2<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; D 4 4 2<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;+&nbsp;<u> B 4 4 2</u><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; L&nbsp; I&nbsp; 2 6<br>&nbsp;<br>Now at the hundreds place there will be a carry over of 1, because of which we will get I= 3(4+4+4+1). Now when I =3 we will get:<br><table align="left" cellpadding="0" cellspacing="0"><tbody><tr><td align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2 4 4 2<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; D 4 4 2<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +&nbsp; <u>B 4 4 2</u><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; L&nbsp; 3 2 6</td></tr></tbody></table><div style="clear:both;"><table align="left" cellpadding="0" cellspacing="0"><tbody><tr><td align="left">Now we have used digits 2,3,4,6 and now 0 cannot be used as a number cannot start with a 0. We are left with 3 variables and the possible digits to be used are 1,5,7,8 and 9.&nbsp; Now as&nbsp; L cannot be greater than 9, so the sum of<br>B+D cannot be greater than 6 because there is already a carry over of 1 at the thousands place. So neither B nor D can be 7,8,or 9. So the only possibilities for B and D are 1 and 5 and which will give L=9</td></tr></tbody></table><div style="clear:both;">&nbsp;</div>So here are the values :<br><table align="left" cellpadding="0" cellspacing="0"><tbody><tr><td align="left">P=2&nbsp; ,E=4,&nbsp; B=1/5,&nbsp; D=1/5 ,&nbsp; L=9,&nbsp;&nbsp; I=3, and S=6<br>&nbsp;<br>&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2&nbsp;&nbsp; 4 4 2<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1/5 4 4 2<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>+5/1 4 4 2</u><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 9&nbsp; 3 2 6</td></tr></tbody></table><div style="clear:both;"><br>Value of P= 2</div></div></td></tr></tbody></table><div style="clear:both;"><br>&nbsp;</div></td></tr></tbody></table><div style="clear:both;"><br>&nbsp;</div></div>
+        </div><div class="question">
+            <h2>28. Cryptography</h2>
+            <div></div>
+            <div>Each variable below is a distinct digit . Figure out the values and the answer the following questions:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; P E E P<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +&nbsp; D E E P<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +&nbsp; <u>B E E P</u><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; L&nbsp; I&nbsp; P S<br><br>What is the value of L+I+P+S?</div>
+            <div><strong>Options:</strong></div>
+            <ul>
+                <li class="correct-answer">A. 20</li><li>B. 21</li><li>C. 22</li><li>D. 19</li>
+            </ul>
+            <div><strong>Correct Answer:</strong> <span class="correct-answer">A</span></div>
+            <div class="explanation"><strong>Explanation:</strong> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; P E E P<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; D E E P<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +&nbsp; <u>B E E P</u><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; L&nbsp; I&nbsp; P S<br>&nbsp;<br>Lets start with the units place. If we put P =0, we will get S=0, which is not possible as each letter has a distinct value.<div style="clear:both;">&nbsp;</div>If we put P =1 then S=3, Now&nbsp; when P =1 then E = 7, because 7+7+7 will end<br>with a 1.&nbsp; So now we will get :<br>&nbsp;<br>&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1 7 7 1<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; D 7 7 1<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +&nbsp;<u> B 7 7 1</u><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; L&nbsp; I&nbsp; 1 3<br>Now at the hundreds place there will be a carry over of 2, because of which we will get I=3(7+7+7+2=23) , Now both I=S=3 which is not possible. So P=1,this case is invalid<br>Now if we put P=2 then S=6, Now when P=2 then E=4, because 4+4+4 will end with a 2. So now we will get:<br>&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2 4 4 2<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; D 4 4 2<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;+&nbsp;<u> B 4 4 2</u><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; L&nbsp; I&nbsp; 2 6<br>&nbsp;<br>Now at the hundreds place there will be a carry over of 1, because of which we will get I= 3(4+4+4+1). Now when I =3 we will get:<br><table align="left" cellpadding="0" cellspacing="0"><tbody><tr><td align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2 4 4 2<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; D 4 4 2<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +&nbsp; <u>B 4 4 2</u><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; L&nbsp; 3 2 6</td></tr></tbody></table><table align="left" cellpadding="0" cellspacing="0"><tbody><tr><td align="left">Now we have used digits 2,3,4,6 and now 0 cannot be used as a number cannot start with a 0. We are left with 3 variables and the possible digits to be used are 1,5,7,8 and 9.&nbsp; Now as&nbsp; L cannot be greater than 9, so the sum of<br>B+D cannot be greater than 6 because there is already a carry over of 1 at the thousands place. So neither B nor D can be 7,8,or 9. So the only possibilities for B and D are 1 and 5 and which will give L=9</td></tr></tbody></table><div style="clear:both;">&nbsp;</div>So here are the values :<br>P=2&nbsp; ,E=4,&nbsp; B=1/5,&nbsp; D=1/5 ,&nbsp; L=9,&nbsp;&nbsp; I=3, and S=6<br>&nbsp;<br>&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2&nbsp;&nbsp; 4 4 2<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1/5 4 4 2<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;<u>&nbsp;&nbsp;+5/1 4 4 2</u><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 9&nbsp; 3 2 6<br>L+I+P+S = 20</div>
+        </div><div class="question">
+            <h2>29. Cryptography</h2>
+            <div></div>
+            <div>Each variable below is a distinct digit . Figure out the values and the answer the following questions:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; P E E P<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +&nbsp; D E E P<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <u>+&nbsp; B E E P</u><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; L&nbsp; I&nbsp; P S<br><br>Value of D?</div>
+            <div><strong>Options:</strong></div>
+            <ul>
+                <li>A. 1</li><li class="correct-answer">B. 1 or 5</li><li>C. 5</li><li>D. 6</li>
+            </ul>
+            <div><strong>Correct Answer:</strong> <span class="correct-answer">B</span></div>
+            <div class="explanation"><strong>Explanation:</strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; P E E P<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; D E E P<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +&nbsp; <u>B E E P</u><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; L&nbsp; I&nbsp; P S<br>&nbsp;<br>Lets start with the units place. If we put P =0, we will get S=0, which is not possible as each letter has a distinct value.<div style="clear:both;">&nbsp;</div>If we put P =1 then S=3, Now&nbsp; when P =1 then E = 7, because 7+7+7 will end<br>with a 1.&nbsp; So now we will get :<br>&nbsp;<br>&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1 7 7 1<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; D 7 7 1<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +&nbsp;<u> B 7 7 1</u><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; L&nbsp; I&nbsp; 1 3<br>Now at the hundreds place there will be a carry over of 2, because of which we will get I=3(7+7+7+2=23) , Now both I=S=3 which is not possible. So P=1,this case is invalid<br>Now if we put P=2 then S=6, Now when P=2 then E=4, because 4+4+4 will end with a 2. So now we will get:<br>&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2 4 4 2<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; D 4 4 2<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;+&nbsp;<u> B 4 4 2</u><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; L&nbsp; I&nbsp; 2 6<br>&nbsp;<br>Now at the hundreds place there will be a carry over of 1, because of which we will get I= 3(4+4+4+1). Now when I =3 we will get:<br><table align="left" cellpadding="0" cellspacing="0"><tbody><tr><td align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2 4 4 2<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; D 4 4 2<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +&nbsp; <u>B 4 4 2</u><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; L&nbsp; 3 2 6</td></tr></tbody></table><table align="left" cellpadding="0" cellspacing="0"><tbody><tr><td align="left">Now we have used digits 2,3,4,6 and now 0 cannot be used as a number cannot start with a 0. We are left with 3 variables and the possible digits to be used are 1,5,7,8 and 9.&nbsp; Now as&nbsp; L cannot be greater than 9, so the sum of<br>B+D cannot be greater than 6 because there is already a carry over of 1 at the thousands place. So neither B nor D can be 7,8,or 9. So the only possibilities for B and D are 1 and 5 and which will give L=9</td></tr></tbody></table><div style="clear:both;">&nbsp;</div>So here are the values :<br>P=2&nbsp; ,E=4,&nbsp; B=1/5,&nbsp; D=1/5 ,&nbsp; L=9,&nbsp;&nbsp; I=3, and S=6<br>&nbsp;<br>&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2&nbsp;&nbsp; 4 4 2<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1/5 4 4 2<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;<u>&nbsp;&nbsp;+5/1 4 4 2</u><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 9&nbsp; 3 2 6<br>Value for D is either 1 or 5</div>
+        </div><div class="question">
+            <h2>30. Cryptography</h2>
+            <div></div>
+            <div>Each variable below is a distinct digit . Figure out the values and the answer the following questions:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; P E E P<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +&nbsp; D E E P<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <u>+&nbsp; B E E P</u><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; L&nbsp; I&nbsp; P S<br><br>What is the value of D × B?</div>
+            <div><strong>Options:</strong></div>
+            <ul>
+                <li>A. 6</li><li>B. 8</li><li>C. 12</li><li class="correct-answer">D. 5</li>
+            </ul>
+            <div><strong>Correct Answer:</strong> <span class="correct-answer">D</span></div>
+            <div class="explanation"><strong>Explanation:</strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; P E E P<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; D E E P<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +&nbsp; <u>B E E P</u><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; L&nbsp; I&nbsp; P S<br>&nbsp;<br>Lets start with the units place. If we put P =0, we will get S=0, which is not possible as each letter has a distinct value.<div style="clear:both;">&nbsp;</div>If we put P =1 then S=3, Now&nbsp; when P =1 then E = 7, because 7+7+7 will end<br>with a 1.&nbsp; So now we will get :<br>&nbsp;<br>&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1 7 7 1<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; D 7 7 1<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +&nbsp;<u> B 7 7 1</u><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; L&nbsp; I&nbsp; 1 3<br>Now at the hundreds place there will be a carry over of 2, because of which we will get I=3(7+7+7+2=23) , Now both I=S=3 which is not possible. So P=1,this case is invalid<br>Now if we put P=2 then S=6, Now when P=2 then E=4, because 4+4+4 will end with a 2. So now we will get:<br>&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2 4 4 2<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; D 4 4 2<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;+&nbsp;<u> B 4 4 2</u><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; L&nbsp; I&nbsp; 2 6<br>&nbsp;<br>Now at the hundreds place there will be a carry over of 1, because of which we will get I= 3(4+4+4+1). Now when I =3 we will get:<br><table align="left" cellpadding="0" cellspacing="0"><tbody><tr><td align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2 4 4 2<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; D 4 4 2<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +&nbsp; <u>B 4 4 2</u><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; L&nbsp; 3 2 6</td></tr></tbody></table><table align="left" cellpadding="0" cellspacing="0"><tbody><tr><td align="left">Now we have used digits 2,3,4,6 and now 0 cannot be used as a number cannot start with a 0. We are left with 3 variables and the possible digits to be used are 1,5,7,8 and 9.&nbsp; Now as&nbsp; L cannot be greater than 9, so the sum of<br>B+D cannot be greater than 6 because there is already a carry over of 1 at the thousands place. So neither B nor D can be 7,8,or 9. So the only possibilities for B and D are 1 and 5 and which will give L=9</td></tr></tbody></table><div style="clear:both;">&nbsp;</div>So here are the values :<br>P=2&nbsp; ,E=4,&nbsp; B=1/5,&nbsp; D=1/5 ,&nbsp; L=9,&nbsp;&nbsp; I=3, and S=6<br>&nbsp;<br>&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2&nbsp;&nbsp; 4 4 2<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1/5 4 4 2<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;<u>&nbsp;&nbsp;+5/1 4 4 2</u><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 9&nbsp; 3 2 6<br>D × B = 5</div>
+        </div><div class="question">
+            <h2>31. Cryptography</h2>
+            <div></div>
+            <div>Each variable below is a distinct digit . Figure out the values and the answer the following questions:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; P E E P<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +&nbsp; D E E P<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +&nbsp; <u>B E E P</u><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; L&nbsp; I&nbsp; P S<br><br>What is the value for LIPS – PEEP ?</div>
+            <div><strong>Options:</strong></div>
+            <ul>
+                <li class="correct-answer">A. 6884</li><li>B. 6428</li><li>C. 5628</li><li>D. 6968</li>
+            </ul>
+            <div><strong>Correct Answer:</strong> <span class="correct-answer">A</span></div>
+            <div class="explanation"><strong>Explanation:</strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; P E E P<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; D E E P<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +&nbsp; <u>B E E P</u><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; L&nbsp; I&nbsp; P S<br>&nbsp;<br>Lets start with the units place. If we put P =0, we will get S=0, which is not possible as each letter has a distinct value.<div style="clear:both;">&nbsp;</div>If we put P =1 then S=3, Now&nbsp; when P =1 then E = 7, because 7+7+7 will end<br>with a 1.&nbsp; So now we will get :<br>&nbsp;<br>&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1 7 7 1<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; D 7 7 1<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +&nbsp;<u> B 7 7 1</u><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; L&nbsp; I&nbsp; 1 3<br>Now at the hundreds place there will be a carry over of 2, because of which we will get I=3(7+7+7+2=23) , Now both I=S=3 which is not possible. So P=1,this case is invalid<br>Now if we put P=2 then S=6, Now when P=2 then E=4, because 4+4+4 will end with a 2. So now we will get:<br>&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2 4 4 2<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; D 4 4 2<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;+&nbsp;<u> B 4 4 2</u><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; L&nbsp; I&nbsp; 2 6<br>&nbsp;<br>Now at the hundreds place there will be a carry over of 1, because of which we will get I= 3(4+4+4+1). Now when I =3 we will get:<br><table align="left" cellpadding="0" cellspacing="0"><tbody><tr><td align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2 4 4 2<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; D 4 4 2<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +&nbsp; <u>B 4 4 2</u><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; L&nbsp; 3 2 6</td></tr></tbody></table><table align="left" cellpadding="0" cellspacing="0"><tbody><tr><td align="left">Now we have used digits 2,3,4,6 and now 0 cannot be used as a number cannot start with a 0. We are left with 3 variables and the possible digits to be used are 1,5,7,8 and 9.&nbsp; Now as&nbsp; L cannot be greater than 9, so the sum of<br>B+D cannot be greater than 6 because there is already a carry over of 1 at the thousands place. So neither B nor D can be 7,8,or 9. So the only possibilities for B and D are 1 and 5 and which will give L=9</td></tr></tbody></table><div style="clear:both;">&nbsp;</div>So here are the values :<br>P=2&nbsp; ,E=4,&nbsp; B=1/5,&nbsp; D=1/5 ,&nbsp; L=9,&nbsp;&nbsp; I=3, and S=6<br>&nbsp;<br>&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2&nbsp;&nbsp; 4 4 2<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1/5 4 4 2<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;<u>&nbsp;&nbsp;+5/1 4 4 2</u><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 9&nbsp; 3 2 6<br>LIPS – PEEP = 6884</div>
+        </div><div class="question">
+            <h2>32. Spatial Reasoning</h2>
+            <div></div>
+            <div><div style="text-align:justify;">Figure shows a clothes line attached to four independent pulleys P, Q, R &amp; S. Which of the options represent the correct rotation of pulleys that would result in lowering the clothes line?</div><br><img alt="" src="https://questionbank.hitbullseye.com/data/75c9295fbe0953ffdff8dc77459dbf48/b3d198b8328e5c299c35a4a5cbc8d5d6.png"></div>
+            <div><strong>Options:</strong></div>
+            <ul>
+                <li>A. <img alt="" src="https://questionbank.hitbullseye.com/data/75c9295fbe0953ffdff8dc77459dbf48/4c7a4edcd10d0f831fcf353d6a939a51.png"></li><li>B. <img alt="" src="https://questionbank.hitbullseye.com/data/75c9295fbe0953ffdff8dc77459dbf48/4584348d63d320474e7207fedf399b4d.png"></li><li class="correct-answer">C. <img alt="" src="https://questionbank.hitbullseye.com/data/75c9295fbe0953ffdff8dc77459dbf48/533b90f4191248b5f740f823b44e2cbe.png"></li><li>D. <img alt="" src="https://questionbank.hitbullseye.com/data/75c9295fbe0953ffdff8dc77459dbf48/cd5c1bfd0dbacf2ab1ab810737d75c30.png"></li>
+            </ul>
+            <div><strong>Correct Answer:</strong> <span class="correct-answer">C</span></div>
+            <div class="explanation"><strong>Explanation:</strong> Going&nbsp; like in option C, will help in lowering the clothes.</div>
+        </div><div class="question">
+            <h2>33. Spatial Reasoning</h2>
+            <div></div>
+            <div>Which of the options will replace the question mark?<br><br><img alt="" src="https://questionbank.hitbullseye.com/data/75c9295fbe0953ffdff8dc77459dbf48/57799e927f55deb013e9dba91d0dc310.png"></div>
+            <div><strong>Options:</strong></div>
+            <ul>
+                <li class="correct-answer">A. <img alt="" src="https://questionbank.hitbullseye.com/data/75c9295fbe0953ffdff8dc77459dbf48/3b11e213a23328143441c12f95913125.png"></li><li>B. <img alt="" src="https://questionbank.hitbullseye.com/data/75c9295fbe0953ffdff8dc77459dbf48/82057eabefecaf13a215ac1ae2bf143c.png"></li><li>C. <img alt="" src="https://questionbank.hitbullseye.com/data/75c9295fbe0953ffdff8dc77459dbf48/f8be996dbb6d58838270df6233b5099c.png"></li><li>D. <img alt="" src="https://questionbank.hitbullseye.com/data/75c9295fbe0953ffdff8dc77459dbf48/3293b76322fd56fea8ff82f2f7af19fd.png"></li>
+            </ul>
+            <div><strong>Correct Answer:</strong> <span class="correct-answer">A</span></div>
+            <div class="explanation"><strong>Explanation:</strong> </div>
+        </div><div class="question">
+            <h2>34. Spatial Reasoning</h2>
+            <div></div>
+            <div>If the given figure represents a cube in 3D, which of the options correctly represents its views from different sides?<br><br><img alt="" src="https://questionbank.hitbullseye.com/data/75c9295fbe0953ffdff8dc77459dbf48/26a6c493a4088d3e3562abfdeef070e1.png"></div>
+            <div><strong>Options:</strong></div>
+            <ul>
+                <li class="correct-answer">A. <img alt="" src="https://questionbank.hitbullseye.com/data/75c9295fbe0953ffdff8dc77459dbf48/67e28ad3001518a564180b857acb58ab.png"></li><li>B. <img alt="" src="https://questionbank.hitbullseye.com/data/75c9295fbe0953ffdff8dc77459dbf48/bd8e10d4f2d4fd85ddfb9c40357daf4b.png"></li><li>C. <img alt="" src="https://questionbank.hitbullseye.com/data/75c9295fbe0953ffdff8dc77459dbf48/e749a426e6b2670aaaa6e1714e593fe9.png"></li><li>D. <img alt="" src="https://questionbank.hitbullseye.com/data/75c9295fbe0953ffdff8dc77459dbf48/840bb4665226352bbc47956bef9b3f95.png"></li>
+            </ul>
+            <div><strong>Correct Answer:</strong> <span class="correct-answer">A</span></div>
+            <div class="explanation"><strong>Explanation:</strong> As per observation.</div>
+        </div><div class="question">
+            <h2>35. Spatial Reasoning</h2>
+            <div></div>
+            <div>A square is cut into 4 pieces. One of the pieces is shown on the left and the remaining three are in the options. Which of the options is NOT a part of the square?<br><br><img alt="" src="https://questionbank.hitbullseye.com/data/75c9295fbe0953ffdff8dc77459dbf48/af1e889ca2f26f984dab3faa8872cf27.png"></div>
+            <div><strong>Options:</strong></div>
+            <ul>
+                <li class="correct-answer">A. <img alt="" src="https://questionbank.hitbullseye.com/data/75c9295fbe0953ffdff8dc77459dbf48/639b39d5f35da625ef54acaef9157f11.png"></li><li>B. <img alt="" src="https://questionbank.hitbullseye.com/data/75c9295fbe0953ffdff8dc77459dbf48/939142a421c6dd24b7333a66317268a0.png"></li><li>C. <img alt="" src="https://questionbank.hitbullseye.com/data/75c9295fbe0953ffdff8dc77459dbf48/1a8fc9bf2f750f163cf2fc76d98251e8.png"></li><li>D. <img alt="" src="https://questionbank.hitbullseye.com/data/75c9295fbe0953ffdff8dc77459dbf48/a4f93f0dc28416bf3f57f85929ab2fb8.png"></li>
+            </ul>
+            <div><strong>Correct Answer:</strong> <span class="correct-answer">A</span></div>
+            <div class="explanation"><strong>Explanation:</strong> <img alt="" src="https://questionbank.hitbullseye.com/data/75c9295fbe0953ffdff8dc77459dbf48/032d4eb88dd8af8207c0972915056f7a.png"></div>
+        </div><div class="question">
+            <h2>36. Spatial Reasoning</h2>
+            <div></div>
+            <div>In the figure given below which of the options will replace the question mark?<br><br><img alt="" src="https://questionbank.hitbullseye.com/data/75c9295fbe0953ffdff8dc77459dbf48/8f19cdc11fd694661ed61ae20e21a2f0.png"></div>
+            <div><strong>Options:</strong></div>
+            <ul>
+                <li>A. <img alt="" src="https://questionbank.hitbullseye.com/data/75c9295fbe0953ffdff8dc77459dbf48/5140104e503db15dc2c54cea4c50b35c.png"></li><li class="correct-answer">B. <img alt="" src="https://questionbank.hitbullseye.com/data/75c9295fbe0953ffdff8dc77459dbf48/2ffcc9fc5eb6eb93a31ed85c06e99a6c.png"></li><li>C. <img alt="" src="https://questionbank.hitbullseye.com/data/75c9295fbe0953ffdff8dc77459dbf48/354afdefe45bea7e767830f2375e006d.png"></li><li>D. <img alt="" src="https://questionbank.hitbullseye.com/data/75c9295fbe0953ffdff8dc77459dbf48/c5c859b562a6b010ebe8c893793f58de.png"></li>
+            </ul>
+            <div><strong>Correct Answer:</strong> <span class="correct-answer">B</span></div>
+            <div class="explanation"><strong>Explanation:</strong> </div>
+        </div><div class="question">
+            <h2>37. Spatial Reasoning</h2>
+            <div></div>
+            <div>Which of the options can be associated with all the objects?<br><br><img alt="" src="https://questionbank.hitbullseye.com/data/75c9295fbe0953ffdff8dc77459dbf48/297d4333fd42f1c22fb619ae9387da71.png"></div>
+            <div><strong>Options:</strong></div>
+            <ul>
+                <li>A. <img alt="" src="https://questionbank.hitbullseye.com/data/75c9295fbe0953ffdff8dc77459dbf48/e192807c239662d85b13e2336a0b3625.png"></li><li>B. <img alt="" src="https://questionbank.hitbullseye.com/data/75c9295fbe0953ffdff8dc77459dbf48/cc49087b3e571dbb66104ac44502bbe7.png"></li><li class="correct-answer">C. <img alt="" src="https://questionbank.hitbullseye.com/data/75c9295fbe0953ffdff8dc77459dbf48/6f55f4dab742b40008b55c3d3ff8b5c3.png"></li><li>D. <img alt="" src="https://questionbank.hitbullseye.com/data/75c9295fbe0953ffdff8dc77459dbf48/b1b730d9f63de0c21b8d9c27efe4ceb6.png"></li>
+            </ul>
+            <div><strong>Correct Answer:</strong> <span class="correct-answer">C</span></div>
+            <div class="explanation"><strong>Explanation:</strong> </div>
+        </div><div class="question">
+            <h2>38. Encripted Problems</h2>
+            <div></div>
+            <div><div><div>Consider the addition problem “THREE + THREE + FIVE = ELEVEN”, where each letter of the alphabet represents a unique digit from 0 to 9. Each letter of the alphabet will have the same value throughout the problem. The number ELEVEN is divisible by eleven.</div><div>&nbsp;</div><div>What is the value of ELEVEN?</div></div><div>&nbsp;</div></div>
+            <div><strong>Options:</strong></div>
+            <ul>
+                <li>A. <div>131416</div></li><li>B. <div>232826</div></li><li class="correct-answer">C. <div>121913</div></li><li>D. <div>242726</div></li>
+            </ul>
+            <div><strong>Correct Answer:</strong> <span class="correct-answer">C</span></div>
+            <div class="explanation"><strong>Explanation:</strong> <div><div>Since E is the leading digit of the answer, we know that E can take only two values, 1 or 2. (since the sum of 3 digits cannot exceed 27).</div><div>If E = 1, then N = 3 and V = 9.</div><div>If E = 2, then N = 6 and V = 8.</div><div>For ELEVEN to be divisible by 11, ELEVEN must be 121913 or 232826.</div><div>232826.is eliminated because even T = 9 can't yield 23xxxx.</div><div>The only possible combinations of R and I are (0, 8), (4, 0), (5,8) and (7, 4).</div><div>(7, 4) is the only combination which yields the value of T = 5, H = 6 and F = 8</div><div>&nbsp;</div>ELEVEN = 121913.</div><br></div>
+        </div><div class="question">
+            <h2>39. Encripted Problems</h2>
+            <div></div>
+            <div><div style="text-align:justify;">Consider the addition problem “THREE + THREE + FIVE = ELEVEN”, where each letter of the alphabet represents a unique digit from 0 to 9. Each letter of the alphabet will have the same value throughout the problem. The number ELEVEN is divisible by eleven.</div><div style="text-align:justify;">&nbsp;</div><div style="text-align:justify;">What is the value of THREE – EVEN?</div></div>
+            <div><strong>Options:</strong></div>
+            <ul>
+                <li>A. <div>FRVE</div></li><li>B. <div>VENF</div></li><li class="correct-answer">C. <div>TIRVF</div></li><li>D. <div>HRELJ</div></li>
+            </ul>
+            <div><strong>Correct Answer:</strong> <span class="correct-answer">C</span></div>
+            <div class="explanation"><strong>Explanation:</strong> <div><div>Since E is the leading digit of the answer, we know that E can take only two values, 1 or 2. (since the sum of 3 digits cannot exceed 27).</div><div>If E = 1, then N = 3 and V = 9.</div><div>If E = 2, then N = 6 and V = 8.</div><div>For ELEVEN to be divisible by 11, ELEVEN must be 121,913 or 232,826.</div><div>232,826.is eliminated because even T = 9 can't yield 23x,xxx.</div><div>The only possible combinations of R and I are (0, 8), (4, 0), (7, 4) and (5,8).</div><div><div>(7, 4) is the only combination which yields the value of T = 5, H = 6 and F = 8</div><div>&nbsp;</div></div>THREE – EVEN = 56711 – 1913 = 54798 = TIRVF.</div><br></div>
+        </div><div class="question">
+            <h2>40. Spatial Reasoning</h2>
+            <div></div>
+            <div><img alt="" src="https://questionbank.hitbullseye.com/data/75c9295fbe0953ffdff8dc77459dbf48/7aee659a54def70b5b8ad78fde38f39e.png"><br>The number of animals in the above figure is</div>
+            <div><strong>Options:</strong></div>
+            <ul>
+                <li>A. 20</li><li>B. 22</li><li>C. 25</li><li class="correct-answer">D. 27</li>
+            </ul>
+            <div><strong>Correct Answer:</strong> <span class="correct-answer">D</span></div>
+            <div class="explanation"><strong>Explanation:</strong> 12 aquatic animals at the bottom of the image, 1 lion, 1 elephant, 4 zebras, 4 deer, 2 wild beast, 2 wild boar and 1 giraffe.</div>
+        </div>
+        <script>
+            function filterQuestions() {
+                const input = document.getElementById('searchInput');
+                const filter = input.value.toLowerCase();
+                const questions = document.getElementsByClassName('question');
+                
+                for (let i = 0; i < questions.length; i++) {
+                    const questionText = questions[i].innerText.toLowerCase();
+                    questions[i].style.display = questionText.includes(filter) ? '' : 'none';
+                }
+            }
+        </script>
+    

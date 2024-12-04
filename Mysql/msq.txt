@@ -1,0 +1,43 @@
+-------for creating database
+
+CREATE DATABASE college
+
+------creating a new table inside a database
+
+CREATE TABLE students(
+    id int NOT NULL AUTO_INCREMENT,
+    name varchar(30),
+    course varchar(30),
+    batch varchar(30),
+    city varchar(30),
+    year varchar(30),
+    PRIMARY KEY(id)
+)
+
+----------------insert data into table
+INSERT INTO students(
+    name, course, batch, city, year
+)
+
+VALUES(
+    "Mayank", "btech", "k22dm", "pithoragarh", "3rd"
+)
+
+
+-------------------select data
+SELECT * FROM students
+
+--------------------particular data
+SELECT * FROM students WHERE name = "satyam"
+
+--------------for particular coloumn
+SELECT name,city FROM students
+
+
+-------------------update in table in database
+UPDATE students set name = "bruce" WHERE students.id = 5
+UPDATE students set year="4th" WHERE id=2
+
+
+---------------------delete in database
+DELETE FROM students WHERE name = "Aman"

@@ -1,0 +1,189 @@
+1. MySQLi Commands
+Connection Setup
+php
+Copy code
+$host = "localhost";
+$username = "root";
+$password = "";
+$database = "test_db";
+
+// MySQLi connection
+$conn = new mysqli($host, $username, $password, $database);
+
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+Basic Commands
+Create a Database
+php
+Copy code
+$sql = "CREATE DATABASE test_db";
+if ($conn->query($sql) === TRUE) {
+    echo "Database created successfully!";
+} else {
+    echo "Error creating database: " . $conn->error;
+}
+Create a Table
+php
+Copy code
+$sql = "CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(50) NOT NULL,
+    email VARCHAR(50) NOT NULL UNIQUE,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+)";
+if ($conn->query($sql) === TRUE) {
+    echo "Table created successfully!";
+} else {
+    echo "Error creating table: " . $conn->error;
+}
+Insert Data
+php
+Copy code
+$sql = "INSERT INTO users (name, email) VALUES ('John Doe', 'john@example.com')";
+if ($conn->query($sql) === TRUE) {
+    echo "Record inserted successfully!";
+} else {
+    echo "Error inserting record: " . $conn->error;
+}
+Select Data
+php
+Copy code
+$sql = "SELECT * FROM users";
+$result = $conn->query($sql);
+if ($result->num_rows > 0) {
+    while ($row = $result->fetch_assoc()) {
+        echo "ID: " . $row["id"] . " - Name: " . $row["name"] . " - Email: " . $row["email"] . "<br>";
+    }
+} else {
+    echo "No records found.";
+}
+Update Data
+php
+Copy code
+$sql = "UPDATE users SET name='Jane Doe' WHERE id=1";
+if ($conn->query($sql) === TRUE) {
+    echo "Record updated successfully!";
+} else {
+    echo "Error updating record: " . $conn->error;
+}
+Delete Data
+php
+Copy code
+$sql = "DELETE FROM users WHERE id=1";
+if ($conn->query($sql) === TRUE) {
+    echo "Record deleted successfully!";
+} else {
+    echo "Error deleting record: " . $conn->error;
+}
+Drop Table
+php
+Copy code
+$sql = "DROP TABLE users";
+if ($conn->query($sql) === TRUE) {
+    echo "Table dropped successfully!";
+} else {
+    echo "Error dropping table: " . $conn->error;
+}
+Close Connection
+php
+Copy code
+$conn->close();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2. PDO Commands
+Connection Setup
+php
+Copy code
+$host = "localhost";
+$dbname = "test_db";
+$username = "root";
+$password = "";
+
+try {
+    $conn = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    echo "Connected successfully!";
+} catch (PDOException $e) {
+    echo "Connection failed: " . $e->getMessage();
+}
+Basic Commands
+Create a Database
+php
+Copy code
+$sql = "CREATE DATABASE test_db";
+$conn->exec($sql);
+echo "Database created successfully!";
+Create a Table
+php
+Copy code
+$sql = "CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(50) NOT NULL,
+    email VARCHAR(50) NOT NULL UNIQUE,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+)";
+$conn->exec($sql);
+echo "Table created successfully!";
+Insert Data
+php
+Copy code
+$sql = "INSERT INTO users (name, email) VALUES ('John Doe', 'john@example.com')";
+$conn->exec($sql);
+echo "Record inserted successfully!";
+Select Data
+php
+Copy code
+$sql = "SELECT * FROM users";
+$stmt = $conn->query($sql);
+
+while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+    echo "ID: " . $row["id"] . " - Name: " . $row["name"] . " - Email: " . $row["email"] . "<br>";
+}
+Update Data
+php
+Copy code
+$sql = "UPDATE users SET name='Jane Doe' WHERE id=1";
+$conn->exec($sql);
+echo "Record updated successfully!";
+Delete Data
+php
+Copy code
+$sql = "DELETE FROM users WHERE id=1";
+$conn->exec($sql);
+echo "Record deleted successfully!";
+Drop Table
+php
+Copy code
+$sql = "DROP TABLE users";
+$conn->exec($sql);
+echo "Table dropped successfully!";
+Close Connection
+php
+Copy code
+$conn = null;
+Comparison Between MySQLi and PDO
+Feature	MySQLi	PDO
+Database Support	MySQL only	Multiple databases (MySQL, PostgreSQL, SQLite, etc.)
+Prepared Statements	Yes	Yes
+Object-Oriented API	Yes	Yes
+Named Parameters	No	Yes
+Error Handling	Procedural (MySQLi)	Exception-based
